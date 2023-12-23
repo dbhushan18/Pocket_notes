@@ -1,0 +1,13 @@
+.p1{
+    position: re;
+    top: 30px;
+    left: 50px;
+    border: 2px solid black;
+    height: 200px;
+    width: 200px;
+}
+.p2{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+}

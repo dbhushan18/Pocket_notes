@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #8cc461;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+div{
+    display: block;
+}
+.container{
+    height: 100dvh;
+    position: relative;
+    margin: 0 auto;
+    width: 45rem;
+    margin-top: 2rem;
+}
+
+/* header */
+
+.header{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9rem;
+    width: 100%;
+    border: solid white 2px;
+    border-radius: 15px;
+    padding: 1rem; 
+}
+
+.name{
+    color: white;
+    font-weight: 800;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+}
+
+.computer-score, .your-score{
+    display: flex;
+    word-wrap: break-word;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    border-radius: 10px;
+    width: 7rem;
+    height: 100%;
+    padding: 1rem;
+    color: #656565;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+}
+.computer-score{
+    margin-left: 12rem;
+}
+
+.score_comp, .score_your{
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: #252525;
+}
+
+/* Game */
+
+.game{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    place-items: center;
+    height: 28rem;
+    padding-top: 15rem;
+    margin-top: 3rem;
+}
+
+.game::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    left: 29%;
+    top: 63%;
+    background: url("bg-triangle.svg") no-repeat;
+    z-index: -1;
+  }
+  
+.paper{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-top: 4rem;
+    border: 1rem solid #FFA943;
+}
+
+.choice{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 37%, rgba(235,234,234,1) 100%);border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    padding: 0.9rem;
+    cursor: pointer;
+}
+
+.comp{
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 37%, rgba(235,234,234,1) 100%);border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    text-align: center;
+    padding: 0.9rem;
+}
+
+
+.rock{
+    margin-left: 5rem;
+    border: 1rem solid #0074B6;
+}
+
+.scissor{
+    margin-right: 5rem;
+    border: 1rem solid #BD00FF;
+
+}
+
+/* .hide{
+    display: none;
+} */
+
+
+/* rules section */
+.rules{
+    top: 19rem;
+    right: 5rem;
+    width: 18rem;
+    height: 22rem;
+    background-color: #004429;
+    color: white;
+    border: 5px solid white;
+    border-radius: 10px;
+    position: absolute;
+   }
+  
+   ul{
+    padding-left: 1.2em;
+    padding-right: 0.6em;
+    padding-left: 1.5em;
+
+  }
+
+  li{
+    padding-bottom: 0.6em;
+    padding-right: 0.2em;
+  }
+
+  .rule-text{
+    padding-top: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 28px;
+  }
+
+.close-btn{
+    background: #FF0000;
+    border: 4px solid white;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem; 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 16em;
+    bottom: 20em;    
+}  
+
+.btn-rule{
+    border-radius: 8px;
+    width: 7rem;
+    height: 2.5rem;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 42rem;
+    right: 5rem;
+    cursor: pointer;
+}
+
+.changepos{
+    right: 12rem;
+}
+
+/* result section */
+
+.result{
+    position: absolute;
+    display: flex;
+
+    top: 12em;
+    gap: 9em; 
+} 
+
+/* #your-choice{
+    position: fixed;
+    top: 17em;
+    left: 28rem;
+    color: white;
+} */
+
+/* #pc-choice{
+    position: fixed;
+    top: 17em;
+    right: 28rem;
+    color: white;
+} */
+
+.left{
+    /* gap: 3rem ;
+    position: absolute;
+    display: flex;
+    top: 10rem; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* .user_choice{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+} */
+
+/* .right{
+    left: 19rem;
+    position: absolute;
+} */
+
+
+.print-result{
+    color: white;
+    position: relative;
+    left: 18rem;
+    top: 7rem;
+    letter-spacing: 0.2em;
+    font-weight: 800;
+}
+#text1{
+    text-indent: 0.2em;
+
+}
+#text2{
+    text-indent: 0.3em;
+}
+
+.play-again{
+    height: 2rem;
+    padding-top: 0.3em;
+    text-align: center;
+    width: 8rem;
+    color: #6B6B6B;
+    background-color: aliceblue;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    left: 19rem;
+    top: 15rem;
+   }
+
+   /* gradient effect */
+  /* .gradient{
+    background: content-box;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 37%, rgba(235,234,234,1) 100%);border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    bottom: 33rem;
+    left: 4rem;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin:3rem auto;
+    border: 35px double rgba(60, 189, 8, 0.5);
+    position: relative;
+  }
+   */
+  
+.next-btn{
+    border-radius: 8px;
+    width: 7rem;
+    height: 2.5rem;
+    background: transparent;
+    border: 3px solid white;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 42rem;
+    right: 3rem;
+    cursor: pointer;
+}
+
+/* hurray page */
+
+.container2{
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    width: 45rem;
+    margin-top: 1rem;
+}
+.stars{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 42rem;
+  }
+
+.cup,.hurray, .win-text, .play{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 55rem; 
+}
+
+.hurray{
+    color: white;
+    font-size: 85px;
+    margin-top: 1rem;
+    letter-spacing: 0.1em;
+    font-weight: 900;
+}
+
+.win-text{
+    color: white;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.play{
+    height: 2rem;
+    width: 8rem;
+    color: #6B6B6B;
+    background: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+    left: 18rem;
+    margin-top: 1rem;
+}

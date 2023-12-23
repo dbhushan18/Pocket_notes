@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+body{
+        background-color: #8cc461;
+}
+
+div{
+    display: block;
+}
+
+.container{
+    position: relative;
+    max-width: 800px;
+    margin: 2px auto;
+    padding-top: 2rem;
+}
+.header{
+    display: flex;
+    height: 150px;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 15px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.logo{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    float: left;
+}
+
+.score{
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
+    height: 100%;
+    padding: 10px;
+}
+
+.computer_score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 100%;
+    width: 150px;
+    padding: 1px;
+    border-radius: 10px;
+}
+
+.score_title{
+    text-align: center;
+}
+
+.your_score{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    height: 100%;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    border-radius: 10px;
+}
+ 
+.game_container{
+    background-image: url(./bg-triangle.svg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+    background-position: center;  
+}
+.upper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+}
+.lower{
+    margin-top: 20px;
+}
+
+.rock, .paper , .scissor{
+    cursor: pointer;
+}
+
+
+.rules{
+    position: absolute;
+    padding-right: 5rem;
+    top: 41rem;
+    right: 2rem;
+}
+.btn-rule{  
+    background: transparent;
+    border: 3px solid black;
+    color: black;
+    font-size: 25px;
+    letter-spacing: 1px;
+    border-radius: 8px;
+    width: 100px;
+    height: 35px;
+    cursor: pointer;
+}
+.rule-container{
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    right: 5rem;
+    top: 20rem;
+}
+.picked{
+    display: flex;
+    color: aliceblue;
+    gap: 300px;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.game2_container{
+    display: flex;
+    position: absolute;
+    gap: 300px;
+    top: 320px;
+    left: 450px;
+}
+
+.hidden{
+    display: none;
+}
+
+.stars{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+.trophy{
+    position: absolute;
+    top: 13rem;
+    left: 42rem;
+}
+.hurray_name{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 3rem;
+}
+.play_again{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+

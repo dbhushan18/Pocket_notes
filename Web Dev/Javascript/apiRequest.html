@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button id="btn">click me</button>
+    
+</body>
+<script>
+    const url = 'https://api.github.com/users/dbhushan18'
+    const xbd = new XMLHttpRequest();
+    let repos;
+    xbd.open('GET',url);
+    xbd.onreadystatechange = function(){
+        console.log(xbd.readyState);
+        if(xbd.readyState === 4){
+            const data = JSON.parse(this.responseText);
+            console.log(data.public_repos);
+            repos = data.public_repos;       
+        }
+
+    }
+    xbd.send();
+
+    let show = document.querySelector('h1');
+    document.querySelector('#btn').addEventListener('click', ()=>{
+        show.innerHTML = repos;
+    });
+</script>
+</html>

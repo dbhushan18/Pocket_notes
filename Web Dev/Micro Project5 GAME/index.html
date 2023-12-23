@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Micro Project 5</title>
+    <link rel="stylesheet" href="project5.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="name">ROCK <br>  PAPER <br> SCISSORS</div>
+            <div class="computer-score">
+                <div class="title_comp">COMPUTER <br>SCORE</div>
+                <div class="score_comp">0</div>
+            </div>
+            <div class="your-score">
+                <div class="title_your">YOUR <br> SCORE</div>
+                <div class="score_your">0</div>
+            </div>
+        </header>
+
+        <div class="game" style="display: none;">
+            <div class="choice rock">
+                <img src="icon_rock.png" alt="rock">
+            </div>
+            <div class="choice scissor">
+                <img src="icon_scissor.png" alt="scissor">
+            </div>
+            <div class="choice paper">
+                <img src="icon_paper.png" alt="Paper">
+            </div>      
+        </div>
+        
+        <div class="your-choice">
+            <p id="your-choice">YOU PICKED</p>
+        </div>
+        <div class="result hide">
+            <div class="left hide">
+                <div class="choice rock hide res" id="userwin1">
+                    <img src="icon_rock.png" alt="rock">
+                </div>
+                <div class="choice scissor hide res" id="userwin2">
+                    <img src="icon_scissor.png" alt="scissor">
+                </div>
+                <div class="choice paper hide res" id="userwin3">
+                    <img src="icon_paper.png" alt="Paper">
+                </div>
+            </div>
+            <div class="right hide">
+                <p id="pc-choice">PC PICKED</p>
+                <div class="choice rock hide res" id="pcwin1">
+                    <img src="icon_rock.png" alt="rock">
+                </div>
+                <div class="choice scissor hide res" id="pcwin2">
+                    <img src="icon_scissor.png" alt="scissor">
+                </div>
+                <div class="choice paper hide res" id="pcwin3">
+                    <img src="icon_paper.png" alt="Paper">
+                </div>
+            </div>
+        </div>
+
+            <div class="print-result hide" id="winlosetext">
+                <h1 id="text1">You Win</h1>
+                <h2 id="text2">AGAINST PC</h2>
+            </div>
+            <div class="play-again hide">PLAY AGAIN</div>
+
+
+        </div>
+    </div> 
+
+    <div class="container2 hide" style="display: none;">
+        <div class="stars">
+            <img src="stars.png">
+        </div>
+        <div class="cup">
+            <img src="Vector.png">
+        </div>
+        <div class="hurray">HURRAY!!</div>
+        <div class="win-text">You won the game</div>
+        <form action="index.html">
+            <button type="submit" class="play">PLAY AGAIN</button>
+        </form>
+    </div>
+
+    <div class="rules hide" id="rule" style="display: none;">
+        <div class="close-btn">
+            <img src="X.png" alt="X">
+        </div>
+        <div class="rule-text">Game Rules</div>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you'll count off "rock, paper, scissors, shoot" or "rock, paper, scissors."</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time.</li>
+            <li>If both players lay down the same hand, each player lays down another hand.</li>
+        </ul>
+    </div>
+    <div class="btn">
+        <button class="btn-rule">RULES</button>
+    </div>        
+    <div class="next hide">
+        <button class="next-btn">NEXT</button>
+    </div>
+    
+    <script src="project5.js"></script>
+</body>
+</html>
