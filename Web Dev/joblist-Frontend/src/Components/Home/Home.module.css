@@ -1,0 +1,156 @@
+.container {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: floralwhite;
+}
+
+.header {
+    background-image: url("../../assets/header.png");
+    background-repeat: no-repeat;
+    height: 15vh;
+    width: 99vw;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    gap: 62rem;
+}
+
+.logoText {
+    color: #ffffff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 28px;
+    margin-left: 3rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right button {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.right span {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.body-container {
+    /* display: flex; */
+    gap: 2rem;
+    /* flex-direction: column; */
+    margin-left: 10rem;
+    margin-right: 10rem;
+    background-color: #ffffff;
+}
+
+.search {
+    height: 30vh;
+    margin-top: 2rem;
+    box-shadow: 0 0 10px -2px #FF2020;
+    /* position: relative; */
+
+}
+/* 
+.body {
+    box-shadow: 0 0 10px -2px #FF2020;
+    height: auto;
+    margin-top: 2rem;
+} */
+
+.searchBox {
+    background-color: #ffffff;
+    margin: 1rem 5rem 1rem 5rem;
+    width: 80%;
+    height: 3rem;
+    border: solid 1px #E3E3E3;
+    border-radius: 8px;
+    padding-left: 5rem;
+    font-size: 20px;
+}
+
+.searchBox::placeholder {
+    color: #9c9c9c;
+    font-size: 20px;
+}
+
+.search button {
+    margin-right: 8rem;
+    margin-top: 2rem;
+}
+
+.searchDiv {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.searchDiv img {
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    top: 1.5rem;
+    left: 9rem;
+    cursor: pointer;
+}
+
+.bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.skills select {
+    width: 8rem;
+    margin-left: 7.5rem;
+    margin-top: 1.5rem;
+    color: #9c9c9c;
+}
+
+.skills {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.showSkill {
+    background: #FFEEEE;
+    padding: 0.3rem 0rem 0.3rem 1rem;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+    color: #000000;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.cross {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    margin-left: 0.5rem;
+    padding: 3px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.selectedSkills {
+    width: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+
+}
+
+/* .selectedSkill{
+    row-gap: 1rem;
+    column-gap: 1rem;
+} */
